@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: thanak81-myblogwebsite-container
-          image: pipejet/thanak81-myblogwebsite:1
+          image: pipejet/thanak81-myblogwebsite:2
           ports:
             - containerPort: 5173
