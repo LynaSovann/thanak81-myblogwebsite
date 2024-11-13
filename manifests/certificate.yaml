@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: thanak81-myblogwebsite-certificate
+  namespace: thanak81-myblogwebsite
+spec:
+  secretName: thanak81-myblogwebsite-secret-tls
+  commonName: thanak81-myblogwebsite.virtualbiz.store
+  dnsNames:
+  - thanak81-myblogwebsite.virtualbiz.store
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
